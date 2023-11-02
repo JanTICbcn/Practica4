@@ -1,0 +1,75 @@
+/*Estem definint el cos de la pàgina (body), 50 px de cada costat per centrar el formulari.*/
+body{
+    margin: 0px;
+    padding: 50px;
+}
+/*
+Aquí estem posant estils a la classe (cuadrat), el quadrat que recobreix tot el formulari.
+ Li estem posant un color de fons, la mida del contenidor i centrant-lo automàticament.*/
+.cuadrat {
+    background-color: rgb(216, 200, 179);
+    border: solid;
+    width: 600px;
+    margin: auto;
+    padding: 15px;
+}
+/*Al títol li estem donant un color, en aquest cas taronja clar.*/
+.titol{
+    color: rgb(196, 135, 21);
+}
+/*A la classe (email1) estem afegint marges a la dreta i a baix per separar les caselles entre elles.
+I a més també estem establint l'amplada d'aquest,*/
+.email1 {
+    margin-left: 130px;
+    margin-bottom: 3px;
+    width: 300px;
+}
+/*A la classe (nom) estem afegint marges per l'esquerra i establint l'amplada.*/
+.Nom{
+    margin-left: 66px;
+    width: 300px; 
+}
+/*En aquest cas hem posat un ID (edat1) en comptes d'una classe.
+ Li estem afegint marges a la dreta i a la part superior i l'amplada d'aquest també.  */
+#edat1{
+    margin-left: 139px;
+    margin-top: 3px;
+    width: 100px;
+}
+/*A la classe (missatge1) estem establint l'altura, l'amplada i el color del text*/
+.missatge1{
+    height: 180px; width: 430px;
+    color: rgb(87, 84, 84);
+}
+/*A la classe (button) el qual és un botó de redireccionament a un altre HTML.
+ Estem afegint; l'altura del botó, l'amplada, treien li el marge, afegint-la en una caixa (border-box),
+ posant la lletra en negreta i establint el color de fons.*/
+.button{
+    width: 100px; height: 45px;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(226, 102, 1);
+    font-weight: bold;
+}
+/*Aqui cuant passem per sobre del hover amb el ratolí cambia de color el text.*/
+.button:hover{
+    color: aqua;
+}
+
+/*Aquí comença el codi de Resultat.html*/
+
+/*En aquest cas també hem posat un ID, (button2) en comptes d'una classe.
+ El que està fent aquesta línia és que quan amb el ratolí cliquem al botó es subraya i està "enfocat"*/
+#button2:focus{
+    text-decoration: underline;
+}
+/*Aquí estem afegint els mateixos estils que a l'anterior classe (cuadrat), però aquí les mesures són diferents.*/
+.cuadrat2 {
+    background-color: rgb(216, 200, 179);
+    border: solid;
+    width: 250px;
+    margin: auto ;
+    padding: 22px;
+}
+
+

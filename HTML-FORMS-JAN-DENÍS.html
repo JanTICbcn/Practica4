@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ca"><!--Li posem la llengua en angles-->
+<head><!--Obrim l'encapçalat del formulari, que serà la part no visible de la pagina web-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulari.css"><!--Enllaçem aquest HTML al seu respectiu CSS per poder personalitzar la pagina web-->
+    <title>Formulari</title><!--Li posem titol a la nostra pagina-->
+</head>
+<body><!--Posem un body, que sera tota la part visible de la nostra pagina web-->
+  <div class="cuadrat"><!--Creem un contenidor amb la classe cuadrat per estructurar el formulari.-->
+    <form action="Resultat.html"><!--Comencem un formulari que enviarà les dades ingressades per l'usuari a una pàgina anomenada "Resultat.html" després d'enviar el formulari.-->
+        <h1 class="titol">Subscriu-te al noticiari ITIC Barcelona</h1><!--Un titol de nivell 1, el mes gran que hi ha com a introduccio del formulari-->
+        <h4>Primer, explica'ns qui ets</h4><!--Un titol de nivell 4, per a que l'usuari sàpiga que haura de fer-->
+        
+        <label for="email">Email</label><!--Informem a l'usuari que fara el formulari, que haura d'introduir el seu correu electronic-->
+        <input type="email" class="email1" required><br><!--Aqui l'usuari escriura el seu correu, i li posem un tipus email per a que nomes pugui escriure el seu correu, a mes a mes li posem un required per a que sigui obligatori emplenar aquest recuadre-->
+      
+        <label for="Nom">Nom i cognoms</label><!--Informem a l'usuari que fara el formulari, que haura d'introduir el seu nom i cognoms-->
+        <input type="Text" class="Nom" required><br><!--Aqui l'usuari escriura el seu nom i cognom, i li posem un tipus text per a que nomes pugui escriure text, a mes a mes li posem un required per a que sigui obligatori emplenar aquest recuadre-->
+
+        <label for="Edat">Edat</label><!--Informem a l'usuari que fara el formulari, que haura d'introduir la seva edat-->
+        <input type="number" id="edat1" required><!--Aqui l'usuari escriura la seva edat, i li posem un tipus number per a que nomes pugui escriure numeros, a mes a mes li posem un required per a que sigui obligatori emplenar aquest recuadre-->
+
+        <h4>Quin cicle estas estudiant?</h4><!--Titol de nivell 4 per a preguntar quin cicle esta estudiant-->
+
+        <div aria-required="true">
+        <input type="radio" name="ASIX" class="asix1"><!--Posem selector amb 3 opcions, de les quals nomes una podra ser elegida, li posem tipus radio per a que sigui aquest tipus de selector, i el required per a que sigui obligatori escollir una opció-->
+        <label for="asix1">ASIX</label><br><!--Informem a l'usuari que la primera opcio es ASIX, i utilitzem "br" deixar espai avall per a l'altre opció-->
+        </div>
+        
+        <input type="radio" name="DAM" class="dam1"><!--Posem selector amb 3 opcions, de les quals nomes una podra ser elegida, li posem tipus radio per a que sigui aquest tipus de selector, i el required per a que sigui obligatori escollir una opció-->
+        <label for="dam1">DAM</label><br><!--Informem a l'usuari que la primera opcio es DAM, i utilitzem "br" deixar espai avall per a l'altre opció-->
+
+        <input type="radio" name="DAW" class="daw1"><!--Posem selector amb 3 opcions, de les quals nomes una podra ser elegida, li posem tipus radio per a que sigui aquest tipus de selector, i el required per a que sigui obligatori escollir una opció-->
+        <label for="daw1">DAW</label><br><br><!--Informem a l'usuari que la primera opcio es DAW, i utilitzem "br" deixar espai avall per a l'altre opció-->
+
+        <label for="desplegable1">I en quin curs?</label><!--Li preguntem a l'usuari "I en quin curs", gracies a aquest "label"-->
+        <select class="desplegable1" required><br><!--Utilitzem select per crear aquest desplegable, on adjuntarem aquestes opcions a continuació-->
+            <option value="opcio1">Primer</option><!--Posem option per a posar la primera opció del desplegable, que en aquest cas serà "Primer"-->
+            <option value="opcio2">Segon</option><!--I aqui posem la segona opció, que en aquest cas serà "Segon"-->
+        </select> <br><!--Tanquem el desplegable, i deixem espai per el que ve seguidament-->
+        
+
+        <h4>Marca els temes que vulguis estar sempre al dia!</h4><!--Un altre titol de nivell 4, per a canviar de tema al nostre formulari-->
+        <div aria-required="true">
+        <input type="checkbox" name="checkbox" class="temes1"><!--Utilitzem input per afegir un altre selecció, que en aquest cas ens ajudara "checkbox", consta d'una selecció, pero en aquest cas podra tenir mes d'una opcio escollida, que en aquest cas sera l'opció "Intel·ligencia artifical", on tambe li ficarem una classe per poder personalitzar i un required per a que minim sigui obligatori escollir una opció-->
+        <label for="tema1">Intel·ligencia artifical</label><br><!--I posem el nom de quina serà l'opció a escollir de cadascuna-->
+        
+        <input type="checkbox" name="checkbox" class="temes2"><!--Utilitzem input per afegir un altre selecció, que en aquest cas ens ajudara "checkbox", consta d'una selecció, pero en aquest cas podra tenir mes d'una opcio escollida, que en aquest cas sera l'opció "Computació quàntica", on tambe li ficarem una classe per poder personalitzar i un required per a que minim sigui obligatori escollir una opció-->
+        <label for="temes2">Computació quàntica</label><br><!--I posem el nom de quina serà l'opció a escollir de cadascuna-->
+
+        <input type="checkbox" name="checkbox" class="temes3"><!--Utilitzem input per afegir un altre selecció, que en aquest cas ens ajudara "checkbox", consta d'una selecció, pero en aquest cas podra tenir mes d'una opcio escollida, que en aquest cas sera l'opció "Supercomputadors", on tambe li ficarem una classe per poder personalitzar i un required per a que minim sigui obligatori escollir una opció-->
+        <label for="temes3">Supercomputadors</label><br><!--I posem el nom de quina serà l'opció a escollir de cadascuna-->
+        
+        <input type="checkbox" name="checkbox" class="temes4"><!--Utilitzem input per afegir un altre selecció, que en aquest cas ens ajudara "checkbox", consta d'una selecció, pero en aquest cas podra tenir mes d'una opcio escollida, que en aquest cas sera l'opció "Recerca en algorísmia", on tambe li ficarem una classe per poder personalitzar i un required per a que minim sigui obligatori escollir una opció-->
+        <label for="temes4">Recerca en algorísmia</label><br><br><!--I posem el nom de quina serà l'opció a escollir de cadascuna-->
+        </div>
+
+        <div class="missatge"><!--Creem un contenidor amb la classe Missatge per recopilar informació addicional.-->
+            <label for="mensaje">Hi ha algun tema més t'interessi? Explica'ns-ho!</label><!--Posem un label per preguntar a l'usuari i introduir l'ultima part del formulari-->
+            <br><br>
+            <textarea class="missatge1" name="missatge" required>També m'agradaria saber les últimes novetats sobre...</textarea><!--Amb textarea creem un recuadre on podra escriure l'usuari, i amb el text que li sortira al recuadre, sabrà que haura de possar al recuadre-->
+        </div><!--Tanquemel contenidor del missatge-->
+          <br>
+        
+          <input class="button" id="button2" type="submit" value="Subscriu-me" required><!--Finalment crearem el botó per enviar el formulari després de emplenar tot el formulari, on utilitzem el tipus submit per crear el boto, i lo posem el valor "Subscriu-me", que es el que sortira al centre del botó-->
+
+          <br><br><br><!--Deixem molt espai abaix per a que quedi ben estructurat-->
+
+        </div><!--Tanquem el contenidor de tot el formulari-->      
+    </form><!--Tanquem el formulari-->
+</body><!--Tanquem la part visible de la pagina web-->
+</html><!--I finalment tanquem la nostra pagina web-->
